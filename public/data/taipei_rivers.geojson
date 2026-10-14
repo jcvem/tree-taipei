@@ -1,0 +1,141 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "淡水河",
+        "name_en": "Tamsui River"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.4925,
+            25.018
+          ],
+          [
+            121.491,
+            25.035
+          ],
+          [
+            121.498,
+            25.055
+          ],
+          [
+            121.507,
+            25.085
+          ],
+          [
+            121.495,
+            25.115
+          ],
+          [
+            121.465,
+            25.13
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "基隆河",
+        "name_en": "Keelung River"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.615,
+            25.055
+          ],
+          [
+            121.595,
+            25.06
+          ],
+          [
+            121.575,
+            25.058
+          ],
+          [
+            121.555,
+            25.075
+          ],
+          [
+            121.53,
+            25.08
+          ],
+          [
+            121.518,
+            25.088
+          ],
+          [
+            121.505,
+            25.11
+          ],
+          [
+            121.47,
+            25.125
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "新店溪",
+        "name_en": "Xindian River"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.54,
+            24.985
+          ],
+          [
+            121.532,
+            25.005
+          ],
+          [
+            121.515,
+            25.02
+          ],
+          [
+            121.4925,
+            25.018
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "景美溪",
+        "name_en": "Jingmei River"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.6,
+            24.995
+          ],
+          [
+            121.575,
+            24.99
+          ],
+          [
+            121.548,
+            24.988
+          ],
+          [
+            121.54,
+            24.985
+          ]
+        ]
+      }
+    }
+  ]
+}

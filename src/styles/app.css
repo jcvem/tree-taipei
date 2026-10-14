@@ -1,0 +1,760 @@
+/* ==========================================================================
+   Tree Taipei - Application Styles
+   Responsive layout, editorial controls, mobile bottom sheet, modal dialogs
+   ========================================================================== */
+
+.app-root {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--bg-canvas);
+}
+
+/* --------------------------------------------------------------------------
+   Header / Editorial Title Bar
+   -------------------------------------------------------------------------- */
+.editorial-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 18px;
+  background-color: var(--bg-paper);
+  border-bottom: var(--border-hairline);
+  z-index: 1000;
+  flex-shrink: 0;
+}
+
+.header-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brand-title-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.brand-title {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--ink-primary);
+  line-height: 1.2;
+}
+
+.brand-badge {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  background-color: var(--accent-terracotta-soft);
+  color: var(--accent-terracotta);
+  border: 1px solid rgba(180, 87, 49, 0.25);
+}
+
+.brand-subtitle {
+  font-size: 12px;
+  color: var(--ink-muted);
+  letter-spacing: 0.01em;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-btn {
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  color: var(--ink-secondary);
+  border: var(--border-hairline);
+  background-color: var(--bg-card);
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-btn:hover {
+  background-color: var(--bg-subtle);
+  color: var(--ink-primary);
+  border-color: var(--ink-border-strong);
+}
+
+.nav-btn.primary {
+  background-color: var(--accent-forest);
+  color: #fff;
+  border-color: var(--accent-forest);
+}
+
+.nav-btn.primary:hover {
+  background-color: #213c29;
+}
+
+/* --------------------------------------------------------------------------
+   Map Area & Floating Controls
+   -------------------------------------------------------------------------- */
+.map-viewport {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.leaflet-container-custom {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-canvas) !important;
+}
+
+/* Warm Paper Tile Filter to blend online tiles into editorial canvas */
+.paper-tile-filter .leaflet-tile {
+  filter: sepia(0.24) brightness(0.98) contrast(0.93) saturate(0.85);
+}
+
+/* Quiet Floating Bar (Top Overlay on Map) */
+.floating-controls-panel {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  pointer-events: none;
+  max-width: 960px;
+}
+
+.floating-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  pointer-events: auto;
+}
+
+.quiet-card {
+  background-color: rgba(251, 249, 244, 0.96);
+  border: var(--border-hairline);
+  box-shadow: var(--shadow-panel);
+  border-radius: var(--radius-md);
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* District Dropdown Selector */
+.district-selector {
+  appearance: none;
+  background-color: var(--bg-card);
+  border: var(--border-hairline);
+  border-radius: var(--radius-sm);
+  padding: 5px 26px 5px 10px;
+  color: var(--ink-primary);
+  font-weight: 500;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23534e44' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 6px center;
+  background-size: 14px;
+}
+
+.district-selector:focus {
+  outline: none;
+  border-color: var(--accent-forest);
+}
+
+/* Layer Toggle Chips */
+.layer-toggles-wrap {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.layer-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 9px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  color: var(--ink-muted);
+  background-color: var(--bg-card);
+  border: var(--border-hairline);
+  cursor: pointer;
+  transition: all 0.12s ease;
+  user-select: none;
+}
+
+.layer-chip:hover {
+  background-color: var(--bg-subtle);
+  color: var(--ink-primary);
+}
+
+.layer-chip.active {
+  background-color: var(--bg-paper);
+  color: var(--ink-primary);
+  border-color: var(--ink-border-strong);
+  font-weight: 500;
+}
+
+.layer-chip.active.shade-gaps {
+  border-color: var(--accent-terracotta);
+  background-color: var(--accent-terracotta-soft);
+  color: var(--accent-terracotta);
+}
+
+.chip-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.chip-dot.street-trees { background-color: var(--accent-forest); }
+.chip-dot.park-trees { background-color: var(--accent-moss); }
+.chip-dot.tree-holes { background-color: var(--accent-earth); border-radius: 1px; }
+.chip-dot.parks { background-color: var(--accent-moss); border: 1px solid #33503b; }
+.chip-dot.sidewalks { background-color: var(--accent-slate); border-radius: 1px; }
+.chip-dot.shade-gaps { background-color: var(--accent-terracotta); }
+
+.chip-count {
+  font-size: 11px;
+  color: var(--ink-muted);
+  margin-left: 1px;
+}
+
+/* --------------------------------------------------------------------------
+   Civic Stats Ticker (Quiet Dashboard Bar)
+   -------------------------------------------------------------------------- */
+.civic-summary-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 12px;
+  font-size: 12px;
+  color: var(--ink-secondary);
+  flex-wrap: wrap;
+}
+
+.stat-metric {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.stat-label {
+  color: var(--ink-muted);
+}
+
+.stat-val {
+  font-weight: 600;
+  color: var(--ink-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-val.accent {
+  color: var(--accent-terracotta);
+}
+
+.stat-divider {
+  width: 1px;
+  height: 12px;
+  background-color: var(--ink-hairline);
+}
+
+/* --------------------------------------------------------------------------
+   Legend (Quiet bottom-left overlay)
+   -------------------------------------------------------------------------- */
+.legend-panel {
+  position: absolute;
+  bottom: 18px;
+  left: 14px;
+  z-index: 850;
+  background-color: rgba(251, 249, 244, 0.96);
+  border: var(--border-hairline);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-panel);
+  padding: 10px 14px;
+  font-size: 12px;
+  line-height: 1.4;
+  max-width: 280px;
+}
+
+.legend-title {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--ink-primary);
+  margin-bottom: 6px;
+  letter-spacing: 0.02em;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+  color: var(--ink-secondary);
+}
+
+.legend-note {
+  margin-top: 8px;
+  padding-top: 6px;
+  border-top: var(--border-hairline);
+  font-size: 11px;
+  color: var(--ink-muted);
+}
+
+/* --------------------------------------------------------------------------
+   Detail Drawer / Mobile Bottom Sheet
+   -------------------------------------------------------------------------- */
+.detail-drawer {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 380px;
+  max-height: calc(100vh - 100px);
+  background-color: var(--bg-paper);
+  border: var(--border-hairline);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-panel);
+  z-index: 950;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideInRight 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.drawer-header {
+  padding: 14px 16px;
+  border-bottom: var(--border-hairline);
+  background-color: var(--bg-card);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.drawer-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.drawer-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.drawer-badge.official {
+  background-color: var(--accent-forest-soft);
+  color: var(--accent-forest);
+  border: 1px solid rgba(43, 77, 54, 0.2);
+}
+
+.drawer-badge.derived {
+  background-color: var(--accent-terracotta-soft);
+  color: var(--accent-terracotta);
+  border: 1px solid rgba(180, 87, 49, 0.3);
+}
+
+.drawer-title {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--ink-primary);
+  line-height: 1.3;
+}
+
+.drawer-subtitle {
+  font-size: 12px;
+  color: var(--ink-muted);
+}
+
+.drawer-close-btn {
+  color: var(--ink-muted);
+  padding: 4px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.drawer-close-btn:hover {
+  background-color: var(--bg-subtle);
+  color: var(--ink-primary);
+}
+
+.drawer-body {
+  padding: 14px 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Candidate Opportunity Box */
+.candidate-rationale-box {
+  background-color: var(--accent-terracotta-soft);
+  border: 1px solid rgba(180, 87, 49, 0.25);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+}
+
+.box-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-terracotta);
+  margin-bottom: 4px;
+}
+
+.box-content {
+  font-size: 13px;
+  color: var(--ink-primary);
+  line-height: 1.45;
+}
+
+/* Checklist list */
+.checklist-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.checklist-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-secondary);
+}
+
+.checklist-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.checklist-item {
+  font-size: 12px;
+  color: var(--ink-secondary);
+  background-color: var(--bg-card);
+  padding: 6px 8px;
+  border-radius: var(--radius-sm);
+  border: var(--border-hairline);
+  line-height: 1.4;
+}
+
+/* Field Table */
+.data-fields-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.data-fields-table tr {
+  border-bottom: var(--border-hairline);
+}
+
+.data-fields-table th {
+  text-align: left;
+  padding: 6px 0;
+  color: var(--ink-muted);
+  font-weight: 400;
+  width: 35%;
+}
+
+.data-fields-table td {
+  padding: 6px 0;
+  color: var(--ink-primary);
+  font-weight: 500;
+  word-break: break-all;
+}
+
+/* Coordinates box */
+.coords-provenance-box {
+  background-color: var(--bg-card);
+  border: var(--border-hairline);
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  font-size: 11px;
+  color: var(--ink-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.coord-line {
+  font-family: var(--font-mono);
+  color: var(--ink-secondary);
+}
+
+/* Disclaimer text */
+.disclaimer-quiet {
+  font-size: 11px;
+  color: var(--ink-muted);
+  line-height: 1.4;
+  font-style: italic;
+  padding-top: 4px;
+  border-top: var(--border-hairline);
+}
+
+/* --------------------------------------------------------------------------
+   Modal Dialogs (Shade Equity Essay & Data Provenance)
+   -------------------------------------------------------------------------- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(33, 32, 29, 0.45);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  animation: fadeIn 0.15s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-dialog {
+  background-color: var(--bg-paper);
+  border: var(--border-hairline);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 12px 36px rgba(33, 32, 29, 0.2);
+  width: 100%;
+  max-width: 680px;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.modal-header {
+  padding: 16px 22px;
+  border-bottom: var(--border-hairline);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  background-color: var(--bg-card);
+}
+
+.modal-title {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ink-primary);
+}
+
+.modal-body {
+  padding: 22px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  line-height: 1.65;
+  color: var(--ink-secondary);
+}
+
+.editorial-paragraph {
+  font-size: 14px;
+}
+
+.editorial-lead {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink-primary);
+  border-left: 3px solid var(--accent-forest);
+  padding-left: 12px;
+  line-height: 1.5;
+}
+
+.essay-section-title {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink-primary);
+  margin-top: 6px;
+}
+
+.data-provenance-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.data-provenance-table th,
+.data-provenance-table td {
+  padding: 8px 10px;
+  border: var(--border-hairline);
+  text-align: left;
+}
+
+.data-provenance-table th {
+  background-color: var(--bg-subtle);
+  color: var(--ink-primary);
+  font-weight: 600;
+}
+
+.data-provenance-table tr:nth-child(even) {
+  background-color: var(--bg-card);
+}
+
+.source-link {
+  color: var(--accent-forest);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.source-link:hover {
+  color: var(--ink-primary);
+}
+
+/* --------------------------------------------------------------------------
+   Offline / Fallback Banner
+   -------------------------------------------------------------------------- */
+.offline-banner {
+  position: absolute;
+  top: 64px;
+  right: 14px;
+  z-index: 800;
+  background-color: var(--bg-paper);
+  border: 1px solid var(--accent-ochre);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  font-size: 11px;
+  color: var(--accent-ochre);
+  box-shadow: var(--shadow-subtle);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Responsive Adjustments (390px Viewport)
+   -------------------------------------------------------------------------- */
+@media (max-width: 640px) {
+  .editorial-header {
+    padding: 8px 12px;
+  }
+
+  .brand-title {
+    font-size: 16px;
+  }
+
+  .brand-subtitle {
+    display: none;
+  }
+
+  .nav-btn {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  .floating-controls-panel {
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    gap: 6px;
+  }
+
+  .quiet-card {
+    padding: 4px 8px;
+    gap: 6px;
+  }
+
+  .civic-summary-bar {
+    font-size: 11px;
+    gap: 8px;
+  }
+
+  .layer-toggles-wrap {
+    gap: 4px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+  }
+
+  .layer-chip {
+    padding: 3px 7px;
+    font-size: 11px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* Detail Drawer transforms to Mobile Bottom Sheet */
+  .detail-drawer {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-height: 75vh;
+    border-radius: 12px 12px 0 0;
+    box-shadow: var(--shadow-drawer);
+    animation: slideUpMobile 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .mobile-drag-handle {
+    width: 36px;
+    height: 4px;
+    background-color: var(--ink-hairline);
+    border-radius: 2px;
+    margin: 8px auto 2px;
+  }
+
+  @keyframes slideUpMobile {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  .legend-panel {
+    bottom: 8px;
+    left: 8px;
+    max-width: 200px;
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+}

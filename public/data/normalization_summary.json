@@ -1,0 +1,8 @@
+{
+  "street_trees": 90393,
+  "park_trees": 72011,
+  "tree_holes_raw": 2260,
+  "tree_holes_deduplicated": 1309,
+  "parks": 813,
+  "sidewalk_features": 15053
+}

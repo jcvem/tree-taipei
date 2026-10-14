@@ -1,0 +1,710 @@
+{
+  "city": "臺北市",
+  "snapshot_date": "2026-10-14",
+  "total_summary": {
+    "street_trees": 90393,
+    "park_trees": 72011,
+    "tree_holes_raw": 2260,
+    "tree_holes_deduplicated": 1309,
+    "parks": 813,
+    "sidewalk_features": 15053
+  },
+  "districts": [
+    {
+      "district": "中山區",
+      "center": [
+        25.065863,
+        121.5458
+      ],
+      "bounds": [
+        [
+          25.044864,
+          121.519569
+        ],
+        [
+          25.086861,
+          121.57203
+        ]
+      ],
+      "counts": {
+        "street_trees": 9202,
+        "park_trees": 7893,
+        "total_trees": 17095,
+        "tree_holes": 86,
+        "parks": 99,
+        "sidewalks": 1805,
+        "candidates_total": 86,
+        "candidates_planting_opportunities": 30,
+        "candidate_high_empty": 6,
+        "candidate_strip_opportunity": 24,
+        "candidate_narrow_review": 0,
+        "candidate_existing_audit": 56
+      },
+      "sidewalk_metrics": {
+        "total_length_km": 134.83,
+        "total_area_sqm": 449364.2,
+        "street_trees_per_km": 68.2
+      },
+      "top_species": [
+        {
+          "species": "楓香",
+          "count": 1483
+        },
+        {
+          "species": "茄苳",
+          "count": 1417
+        },
+        {
+          "species": "白千層",
+          "count": 1314
+        },
+        {
+          "species": "榕樹",
+          "count": 1006
+        },
+        {
+          "species": "樟樹",
+          "count": 863
+        }
+      ]
+    },
+    {
+      "district": "中正區",
+      "center": [
+        25.060646,
+        121.533477
+      ],
+      "bounds": [
+        [
+          25.011244,
+          121.504132
+        ],
+        [
+          25.110048,
+          121.562821
+        ]
+      ],
+      "counts": {
+        "street_trees": 6676,
+        "park_trees": 2445,
+        "total_trees": 9121,
+        "tree_holes": 245,
+        "parks": 23,
+        "sidewalks": 1335,
+        "candidates_total": 245,
+        "candidates_planting_opportunities": 81,
+        "candidate_high_empty": 13,
+        "candidate_strip_opportunity": 61,
+        "candidate_narrow_review": 7,
+        "candidate_existing_audit": 164
+      },
+      "sidewalk_metrics": {
+        "total_length_km": 92.24,
+        "total_area_sqm": 358621.5,
+        "street_trees_per_km": 72.4
+      },
+      "top_species": [
+        {
+          "species": "榕樹",
+          "count": 1472
+        },
+        {
+          "species": "茄苳",
+          "count": 1262
+        },
+        {
+          "species": "樟樹",
+          "count": 903
+        },
+        {
+          "species": "大王椰子",
+          "count": 740
+        },
+        {
+          "species": "楓香",
+          "count": 401
+        }
+      ]
+    },
+    {
+      "district": "信義區",
+      "center": [
+        25.031479,
+        121.570381
+      ],
+      "bounds": [
+        [
+          25.01384,
+          121.552787
+        ],
+        [
+          25.049118,
+          121.587976
+        ]
+      ],
+      "counts": {
+        "street_trees": 6635,
+        "park_trees": 4524,
+        "total_trees": 11159,
+        "tree_holes": 13,
+        "parks": 62,
+        "sidewalks": 938,
+        "candidates_total": 13,
+        "candidates_planting_opportunities": 13,
+        "candidate_high_empty": 1,
+        "candidate_strip_opportunity": 12,
+        "candidate_narrow_review": 0,
+        "candidate_existing_audit": 0
+      },
+      "sidewalk_metrics": {
+        "total_length_km": 75.23,
+        "total_area_sqm": 255324.9,
+        "street_trees_per_km": 88.2
+      },
+      "top_species": [
+        {
+          "species": "榕樹",
+          "count": 905
+        },
+        {
+          "species": "樟樹",
+          "count": 807
+        },
+        {
+          "species": "楓香",
+          "count": 639
+        },
+        {
+          "species": "茄苳",
+          "count": 588
+        },
+        {
+          "species": "黑板樹",
+          "count": 526
+        }
+      ]
+    },
+    {
+      "district": "內湖區",
+      "center": [
+        25.070708,
+        121.590623
+      ],
+      "bounds": [
+        [
+          25.052919,
+          121.558287
+        ],
+        [
+          25.088497,
+          121.622959
+        ]
+      ],
+      "counts": {
+        "street_trees": 7517,
+        "park_trees": 7971,
+        "total_trees": 15488,
+        "tree_holes": 156,
+        "parks": 93,
+        "sidewalks": 1658,
+        "candidates_total": 156,
+        "candidates_planting_opportunities": 91,
+        "candidate_high_empty": 24,
+        "candidate_strip_opportunity": 46,
+        "candidate_narrow_review": 21,
+        "candidate_existing_audit": 65
+      },
+      "sidewalk_metrics": {
+        "total_length_km": 164.2,
+        "total_area_sqm": 357558.9,
+        "street_trees_per_km": 45.8
+      },
+      "top_species": [
+        {
+          "species": "大花紫薇",
+          "count": 1452
+        },
+        {
+          "species": "黑板樹",
+          "count": 780
+        },
+        {
+          "species": "榕樹",
+          "count": 736
+        },
+        {
+          "species": "臺灣欒樹",
+          "count": 694
+        },
+        {
+          "species": "苦楝",
+          "count": 563
+        }
+      ]
+    },
+    {
+      "district": "北投區",
+      "center": [
+        25.128974,
+        121.506147
+      ],
+      "bounds": [
+        [
+          25.097454,
+          121.462408
+        ],
+        [
+          25.160493,
+          121.549886
+        ]
+      ],
+      "counts": {
+        "street_trees": 11663,
+        "park_trees": 6530,
+        "total_trees": 18193,
+        "tree_holes": 169,
+        "parks": 129,
+        "sidewalks": 989,
+        "candidates_total": 169,
+        "candidates_planting_opportunities": 124,
+        "candidate_high_empty": 17,
+        "candidate_strip_opportunity": 104,
+        "candidate_narrow_review": 3,
+        "candidate_existing_audit": 45
+      },
+      "sidewalk_metrics": {
+        "total_length_km": 88.24,
+        "total_area_sqm": 235584.2,
+        "street_trees_per_km": 132.2
+      },
+      "top_species": [
+        {
+          "species": "榕樹",
+          "count": 932
+        },
+        {
+          "species": "茄苳",
+          "count": 884
+        },
+        {
+          "species": "楓香",
+          "count": 814
+        },
+        {
+          "species": "臺灣欒樹",
+          "count": 760
+        },
+        {
+          "species": "苦楝",
+          "count": 627
+        }
+      ]
+    },
+    {
+      "district": "南港區",
+      "center": [
+        25.054044,
+        121.59637
+      ],
+      "bounds": [
+        [
+          25.025637,
+          121.565685
+        ],
+        [
+          25.082452,
+          121.627055
+        ]
+      ],
+      "counts": {
+        "street_trees": 6503,
+        "park_trees": 6497,
+        "total_trees": 13000,
+        "tree_holes": 84,
+        "parks": 54,
+        "sidewalks": 1107,
+        "candidates_total": 84,
+        "candidates_planting_opportunities": 46,
+        "candidate_high_empty": 12,
+        "candidate_strip_opportunity": 34,
+        "candidate_narrow_review": 0,
+        "candidate_existing_audit": 38
+      },
+      "sidewalk_metrics": {
+        "total_length_km": 97.12,
+        "total_area_sqm": 287935.3,
+        "street_trees_per_km": 67.0
+      },
+      "top_species": [
+        {
+          "species": "茄苳",
+          "count": 981
+        },
+        {
+          "species": "楓香",
+          "count": 561
+        },
+        {
+          "species": "水黃皮",
+          "count": 447
+        },
+        {
+          "species": "臺灣欒樹",
+          "count": 440
+        },
+        {
+          "species": "樟樹",
+          "count": 392
+        }
+      ]
+    },
+    {
+      "district": "士林區",
+      "center": [
+        25.108643,
+        121.54204
+      ],
+      "bounds": [
+        [
+          25.077871,
+          121.496219
+        ],
+        [
+          25.139416,
+          121.587861
+        ]
+      ],
+      "counts": {
+        "street_trees": 10459,
+        "park_trees": 12974,
+        "total_trees": 23433,
+        "tree_holes": 133,
+        "parks": 97,
+        "sidewalks": 1513,
+        "candidates_total": 133,
+        "candidates_planting_opportunities": 59,
+        "candidate_high_empty": 33,
+        "candidate_strip_opportunity": 25,
+        "candidate_narrow_review": 1,
+        "candidate_existing_audit": 74
+      },
+      "sidewalk_metrics": {
+        "total_length_km": 128.14,
+        "total_area_sqm": 351471.5,
+        "street_trees_per_km": 81.6
+      },
+      "top_species": [
+        {
+          "species": "臺灣欒樹",
+          "count": 1738
+        },
+        {
+          "species": "榕樹",
+          "count": 1348
+        },
+        {
+          "species": "楓香",
+          "count": 1179
+        },
+        {
+          "species": "樟樹",
+          "count": 1136
+        },
+        {
+          "species": "白千層",
+          "count": 1068
+        }
+      ]
+    },
+    {
+      "district": "大同區",
+      "center": [
+        25.063268,
+        121.513701
+      ],
+      "bounds": [
+        [
+          25.048646,
+          121.506466
+        ],
+        [
+          25.07789,
+          121.520937
+        ]
+      ],
+      "counts": {
+        "street_trees": 3300,
+        "park_trees": 1396,
+        "total_trees": 4696,
+        "tree_holes": 189,
+        "parks": 28,
+        "sidewalks": 740,
+        "candidates_total": 189,
+        "candidates_planting_opportunities": 98,
+        "candidate_high_empty": 15,
+        "candidate_strip_opportunity": 79,
+        "candidate_narrow_review": 4,
+        "candidate_existing_audit": 91
+      },
+      "sidewalk_metrics": {
+        "total_length_km": 51.64,
+        "total_area_sqm": 166434.5,
+        "street_trees_per_km": 63.9
+      },
+      "top_species": [
+        {
+          "species": "榕樹",
+          "count": 698
+        },
+        {
+          "species": "茄苳",
+          "count": 641
+        },
+        {
+          "species": "楓香",
+          "count": 279
+        },
+        {
+          "species": "大花紫薇",
+          "count": 184
+        },
+        {
+          "species": "小葉欖仁",
+          "count": 170
+        }
+      ]
+    },
+    {
+      "district": "大安區",
+      "center": [
+        25.041255,
+        121.54283
+      ],
+      "bounds": [
+        [
+          25.009885,
+          121.520102
+        ],
+        [
+          25.072626,
+          121.565559
+        ]
+      ],
+      "counts": {
+        "street_trees": 12953,
+        "park_trees": 8355,
+        "total_trees": 21308,
+        "tree_holes": 11,
+        "parks": 65,
+        "sidewalks": 1608,
+        "candidates_total": 11,
+        "candidates_planting_opportunities": 9,
+        "candidate_high_empty": 4,
+        "candidate_strip_opportunity": 5,
+        "candidate_narrow_review": 0,
+        "candidate_existing_audit": 2
+      },
+      "sidewalk_metrics": {
+        "total_length_km": 112.63,
+        "total_area_sqm": 449670.2,
+        "street_trees_per_km": 115.0
+      },
+      "top_species": [
+        {
+          "species": "樟樹",
+          "count": 1735
+        },
+        {
+          "species": "茄苳",
+          "count": 1276
+        },
+        {
+          "species": "臺灣欒樹",
+          "count": 1094
+        },
+        {
+          "species": "榕樹",
+          "count": 1040
+        },
+        {
+          "species": "楓香",
+          "count": 971
+        }
+      ]
+    },
+    {
+      "district": "文山區",
+      "center": [
+        25.047885,
+        121.559754
+      ],
+      "bounds": [
+        [
+          24.977219,
+          121.523926
+        ],
+        [
+          25.11855,
+          121.595582
+        ]
+      ],
+      "counts": {
+        "street_trees": 4294,
+        "park_trees": 5926,
+        "total_trees": 10220,
+        "tree_holes": 66,
+        "parks": 88,
+        "sidewalks": 1126,
+        "candidates_total": 66,
+        "candidates_planting_opportunities": 24,
+        "candidate_high_empty": 13,
+        "candidate_strip_opportunity": 7,
+        "candidate_narrow_review": 4,
+        "candidate_existing_audit": 42
+      },
+      "sidewalk_metrics": {
+        "total_length_km": 97.48,
+        "total_area_sqm": 234946.6,
+        "street_trees_per_km": 44.1
+      },
+      "top_species": [
+        {
+          "species": "黑板樹",
+          "count": 653
+        },
+        {
+          "species": "臺灣欒樹",
+          "count": 616
+        },
+        {
+          "species": "樟樹",
+          "count": 351
+        },
+        {
+          "species": "紫薇",
+          "count": 341
+        },
+        {
+          "species": "榕樹",
+          "count": 317
+        }
+      ]
+    },
+    {
+      "district": "松山區",
+      "center": [
+        25.058484,
+        121.561988
+      ],
+      "bounds": [
+        [
+          25.044723,
+          121.544035
+        ],
+        [
+          25.072246,
+          121.579942
+        ]
+      ],
+      "counts": {
+        "street_trees": 7965,
+        "park_trees": 3549,
+        "total_trees": 11514,
+        "tree_holes": 106,
+        "parks": 44,
+        "sidewalks": 1296,
+        "candidates_total": 106,
+        "candidates_planting_opportunities": 21,
+        "candidate_high_empty": 12,
+        "candidate_strip_opportunity": 7,
+        "candidate_narrow_review": 2,
+        "candidate_existing_audit": 85
+      },
+      "sidewalk_metrics": {
+        "total_length_km": 105.03,
+        "total_area_sqm": 336024.4,
+        "street_trees_per_km": 75.8
+      },
+      "top_species": [
+        {
+          "species": "樟樹",
+          "count": 1278
+        },
+        {
+          "species": "榕樹",
+          "count": 1246
+        },
+        {
+          "species": "茄苳",
+          "count": 1123
+        },
+        {
+          "species": "楓香",
+          "count": 1105
+        },
+        {
+          "species": "黑板樹",
+          "count": 621
+        }
+      ]
+    },
+    {
+      "district": "萬華區",
+      "center": [
+        25.059531,
+        121.511386
+      ],
+      "bounds": [
+        [
+          25.016552,
+          121.488224
+        ],
+        [
+          25.10251,
+          121.534548
+        ]
+      ],
+      "counts": {
+        "street_trees": 3226,
+        "park_trees": 3951,
+        "total_trees": 7177,
+        "tree_holes": 51,
+        "parks": 31,
+        "sidewalks": 938,
+        "candidates_total": 51,
+        "candidates_planting_opportunities": 18,
+        "candidate_high_empty": 4,
+        "candidate_strip_opportunity": 10,
+        "candidate_narrow_review": 4,
+        "candidate_existing_audit": 33
+      },
+      "sidewalk_metrics": {
+        "total_length_km": 68.01,
+        "total_area_sqm": 196731.1,
+        "street_trees_per_km": 47.4
+      },
+      "top_species": [
+        {
+          "species": "茄苳",
+          "count": 584
+        },
+        {
+          "species": "榕樹",
+          "count": 504
+        },
+        {
+          "species": "小葉欖仁",
+          "count": 397
+        },
+        {
+          "species": "榔榆",
+          "count": 216
+        },
+        {
+          "species": "臺灣欒樹",
+          "count": 174
+        }
+      ]
+    }
+  ]
+}
