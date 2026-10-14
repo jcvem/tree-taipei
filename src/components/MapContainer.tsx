@@ -62,17 +62,14 @@ export const MapContainer: React.FC<MapContainerProps> = ({
 
     L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-    // Online Carto Positron TileLayer
-    const tiles = L.tileLayer(
-      'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
-      {
-        attribution:
-          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        subdomains: 'abcd',
-        maxZoom: 19,
-        className: 'paper-tile-filter',
-      }
-    );
+    // Online OpenStreetMap TileLayer (direct HTTP/2 host with tile buffer)
+    const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 19,
+      keepBuffer: 3,
+      className: 'paper-tile-filter',
+    });
 
     tiles.on('tileerror', () => {
       onTileError();
